@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqryngw8r2rc1"]
+
+[ext_resource type="Texture2D" uid="uid://b6xsdfpggdx0f" path="res://Assets/Offline/Blocks/J Tetromino/J_Tetromino.png" id="1_3kopq"]
+
+[node name="J Tetromino" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3kopq")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-12.4883, -18.7383)
+scale = Vector2(1.08277, 4.86993)
+build_mode = 1
+polygon = PackedVector2Array(11.5336, -6.00865, 41.0875, -6.00865, 41.0875, 13.7042, -18.0202, 13.7042, -18.0202, 7.13322, 11.5336, 7.13322)

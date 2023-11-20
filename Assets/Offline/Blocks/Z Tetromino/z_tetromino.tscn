@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmbre5lcaci68"]
+
+[ext_resource type="Texture2D" uid="uid://cpkoortjqaf2c" path="res://Assets/Offline/Blocks/Z Tetromino/Z Tetromino.png" id="1_hdcjr"]
+
+[node name="Z Tetromino" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hdcjr")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-48, 0, -48, -32, 16, -32, 16, 0, 48, 0, 48, 32, -16, 32, -16, 0)

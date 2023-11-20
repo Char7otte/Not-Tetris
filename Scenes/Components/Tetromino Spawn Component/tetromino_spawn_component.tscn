@@ -1,12 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8hngt6upnjeg"]
+[gd_scene load_steps=9 format=3 uid="uid://b8hngt6upnjeg"]
 
 [ext_resource type="Script" path="res://Scenes/Components/Tetromino Spawn Component/tetromino_spawn_component.gd" id="1_qeovl"]
 [ext_resource type="PackedScene" uid="uid://x8jnsgfc8bm" path="res://Assets/Offline/Blocks/I Tetromino/i_tetromino.tscn" id="2_reg64"]
 [ext_resource type="PackedScene" uid="uid://bmgtrfvowqfi8" path="res://Assets/Offline/Blocks/O Tetromino/o_tetromino.tscn" id="3_o7i0c"]
+[ext_resource type="PackedScene" uid="uid://bqryngw8r2rc1" path="res://Assets/Offline/Blocks/J Tetromino/j_tetromino.tscn" id="3_xclf5"]
+[ext_resource type="PackedScene" uid="uid://glriw3bpx0lc" path="res://Assets/Offline/Blocks/L Tetromino/l_tetromino.tscn" id="4_t4ahq"]
+[ext_resource type="PackedScene" uid="uid://b3uxymtbdgd7d" path="res://Assets/Offline/Blocks/S Tetromino/s_tetromino.tscn" id="6_46cs7"]
+[ext_resource type="PackedScene" uid="uid://qp0gt45kfs5g" path="res://Assets/Offline/Blocks/T Tetromino/t_tetromino.tscn" id="7_wy1pu"]
+[ext_resource type="PackedScene" uid="uid://cmbre5lcaci68" path="res://Assets/Offline/Blocks/Z Tetromino/z_tetromino.tscn" id="8_t4yps"]
 
 [node name="TetrominoSpawnComponent" type="Node"]
 script = ExtResource("1_qeovl")
-tetromino_bag = [ExtResource("2_reg64"), ExtResource("3_o7i0c")]
+tetromino_bag = [ExtResource("2_reg64"), ExtResource("3_xclf5"), ExtResource("4_t4ahq"), ExtResource("3_o7i0c"), ExtResource("6_46cs7"), ExtResource("7_wy1pu"), ExtResource("8_t4yps")]
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true

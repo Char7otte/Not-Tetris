@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cke03dfh7t8jc"]
+
+[ext_resource type="Script" path="res://Scenes/tetromino_controller.gd" id="1_ude4g"]
+[ext_resource type="PackedScene" uid="uid://b8hngt6upnjeg" path="res://Scenes/Components/Tetromino Spawn Component/tetromino_spawn_component.tscn" id="2_15lee"]
+
+[node name="TetrominoController" type="CharacterBody2D"]
+script = ExtResource("1_ude4g")
+
+[node name="MovementIntervalTimer" type="Timer" parent="."]
+wait_time = 0.35
+one_shot = true
+
+[node name="TetrominoSpawnComponent" parent="." instance=ExtResource("2_15lee")]

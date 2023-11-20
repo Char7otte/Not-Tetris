@@ -9,6 +9,7 @@ size = Vector2(64, 64)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_klpn4")
+metadata/_edit_lock_ = true
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -1,15 +1,17 @@
 extends Node
+class_name TetrominoSpawnComponent
+
+static var controlling_tetromino_piece = false
+static var controlled_tetromino_piece: Node2D
 
 @export var tetromino_bag = []
-@export var tetromino_spawn_time: float
 
-func _ready():
-	tetromino_spawn_time = get_node("Timer").wait_time
+func _process(_delta):
+	if controlling_tetromino_piece == false:
+		spawn_random_piece(tetromino_bag)
 
-func change_spawn_timer_time(new_timer):
-	tetromino_spawn_time = new_timer
-
-func _on_timer_timeout():
-	var random_element = tetromino_bag.pick_random()
-	var selected_tetromino_instance = random_element.instantiate()
-	get_parent().add_child(selected_tetromino_instance)
+func spawn_random_piece(_tetromino_bag):
+	controlling_tetromino_piece = true
+	var random_element = _tetromino_bag.pick_random()
+	var _selected_tetromino_piece = random_element.instantiate()
+	get_parent().add_child.call_deferred(_selected_tetromino_piece)

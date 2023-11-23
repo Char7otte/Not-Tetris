@@ -9,11 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://qp0gt45kfs5g" path="res://Assets/Offline/Blocks/T Tetromino/t_tetromino.tscn" id="7_wy1pu"]
 [ext_resource type="PackedScene" uid="uid://cmbre5lcaci68" path="res://Assets/Offline/Blocks/Z Tetromino/z_tetromino.tscn" id="8_t4yps"]
 
-[node name="TetrominoSpawnComponent" type="Node"]
+[node name="TetrominoSpawnComponent" type="Node2D"]
 script = ExtResource("1_qeovl")
 tetromino_bag = [ExtResource("2_reg64"), ExtResource("3_xclf5"), ExtResource("4_t4ahq"), ExtResource("3_o7i0c"), ExtResource("6_46cs7"), ExtResource("7_wy1pu"), ExtResource("8_t4yps")]
-
-[node name="Timer" type="Timer" parent="."]
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
